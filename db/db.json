@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Middleware ",
+        "text": "//middleware\napp.use(express.static('public')); // point to files in oublic folder\n\n\n\n\n\n\napp.use(express.json()); // parsing JSON data\napp.use(express.urlencoded({extended:true})); // parsing urlencoded data\napp.use('/api',api);  // api path ",
+        "id": "d0ab"
+    },
+    {
+        "title": "Route set up ",
+        "text": "// GET Route for homepage\napp.get('/', (req, res) =>\n  res.sendFile(path.join(__dirname, '/public/index.html'))\n);\n\n// GET Route for notes page\napp.get('/notes', (req, res) =>\n  res.sendFile(path.join(__dirname, '/public/notes.html'))\n);\n",
+        "id": "0d7c"
+    }
+]
